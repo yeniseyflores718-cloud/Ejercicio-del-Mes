@@ -12,6 +12,7 @@ namespace Ejercicio_del_Mes
         protected ClaseVehiculo (int horasEstancia)
         {
             HorasEstancia = horasEstancia;
+            //FCGVHKJHLFXHH
         }
         public abstract float CalcularTarifa();
 
