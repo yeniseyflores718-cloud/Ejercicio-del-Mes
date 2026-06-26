@@ -9,7 +9,7 @@ namespace Ejercicio_del_Mes
     public abstract class ClaseVehiculo
     {
         public int HorasEstancia { get; set; }
-        protected ClaseVehiculo (float horasEstancia)
+        protected ClaseVehiculo (int horasEstancia)
         {
             HorasEstancia = horasEstancia;
         }
