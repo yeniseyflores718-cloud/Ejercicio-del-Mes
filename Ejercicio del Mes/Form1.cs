@@ -44,8 +44,6 @@ namespace Ejercicio_del_Mes
         {
             float horasEstancia = float.Parse(txt_horas.Text);
             ClaseVehiculo claseVehiculo = null;
-
-            
             //Aqui trabajara Kevin
             if (cboVehiculo.Text == "Motocicleta")
             {
