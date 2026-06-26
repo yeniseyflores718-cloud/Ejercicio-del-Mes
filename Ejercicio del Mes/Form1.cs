@@ -45,13 +45,12 @@ namespace Ejercicio_del_Mes
         {
             int horasEstancia = int.Parse(txt_horas.Text);
             ClaseVehiculo claseVehiculo = null;
-
-            
             //Aqui trabajara Kevin
             if (cboVehiculo.Text == "Motocicleta")
             {
+                int cilindrada = int.Parse(txt_extra.Text);
+                motocicleta moto = new motocicleta(horasEstancia, cilindrada);
                 
-
             }
             //Aqui Sonia
             else if (cboVehiculo.Text == "Automovil")
