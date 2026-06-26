@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EstacionamientoWinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -42,7 +43,7 @@ namespace Ejercicio_del_Mes
 
         private void btn_calcular_Click(object sender, EventArgs e)
         {
-            float horasEstancia = float.Parse(txt_horas.Text);
+            int horasEstancia = int.Parse(txt_horas.Text);
             ClaseVehiculo claseVehiculo = null;
             //Aqui trabajara Kevin
             if (cboVehiculo.Text == "Motocicleta")
@@ -60,7 +61,9 @@ namespace Ejercicio_del_Mes
             //Aqui Juan
             else if (cboVehiculo.Text == "Camioneta")
             {
-                
+                int numeroEjes = int.Parse(txtHoras.text);
+
+                claseVehiculo = new Camioneta(horasEstancia, numeroEjes);
             }
             if (claseVehiculo != null)
             {
