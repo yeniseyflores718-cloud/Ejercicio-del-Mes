@@ -49,8 +49,9 @@ namespace Ejercicio_del_Mes
             //Aqui trabajara Kevin
             if (cboVehiculo.Text == "Motocicleta")
             {
+                int cilindrada = int.Parse(txt_extra.Text);
+                motocicleta moto = new motocicleta(horasEstancia, cilindrada);
                 
-
             }
             //Aqui Sonia
             else if (cboVehiculo.Text == "Automovil")
